@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mythical Creatures Museum</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js"
+    ></script>
+
+      <div class="container">
+        <div class="hero">
+          <h1>Mythical Creatures Museum</h1>
+        </div>
+
+            <!-- Navbar -->
+    <div class="navbar">
+      <a href="#shakoki">Shakōki</a>
+      <a href="#shiva">Shiva Nataraja</a>
+      <a href="#dragon">Winged Dragon</a>
+      <a href="#shoki">Shoki</a>
+    </div>
+      <div class="intro-container">
+        <h2 class="intro-title">Asian Statue Mythical Creatures Museum</h2>
+
+
+
+
+        <div class="intro-text">
+          <p>
+            Welcome to a unique digital journey where ancient myths meet modern
+            technology. Our museum invites you to explore the cultural and
+            historical significance behind each statue, bringing ancient
+            beliefs, societal values, and artistic intentions to life.
+          </p>
+
+          <p>
+            Each masterpiece in our collection is accompanied by interactive
+            details that reveal:
+          </p>
+          <ul>
+            <li>Rich mythology and symbolism</li>
+            <li>Traditional craftsmanship techniques</li>
+            <li>Cultural context and significance</li>
+          </ul>
+
+          <p>
+            Experience our collection through immersive 3D models, allowing you
+            to examine each statue in detail from every angle. These models are
+            available for download, enabling you to bring a piece of ancient
+            Asian mythology into your digital space.
+          </p>
+        </div>
+
+        <div class="grid">
+          <!-- Shakōki -->
+          <div class="grid-item" id="shakoki">
+              <div class="item1">
+                  <div class="image-slider">
+                      <img src="img/Goggle-eyed-Camera 2.png" alt="Shakōki or Goggle-eyed 1" />
+                      <img src="img/Goggle-eyed-Camera 3.png" alt="Shakōki or Goggle-eyed 2" />
+                      <img src="img/Goggle-eyed-Camera.png" alt="Shakōki or Goggle-eyed 3" />
+                  </div>
+                  <div class="swipe-controls">
+                      <button class="swipe-btn prev-btn" onclick="swipeImage(this, -1)">‹</button>
+                      <button class="swipe-btn next-btn" onclick="swipeImage(this, 1)">›</button>
+                  </div>
+              </div>
+              <div>
+                  <h2 onclick="openModal('shakoki')">Shakōki or Goggle-eyed</h2>
+                  <p>
+                      The "shakōki" or "goggle-eyed" is a mythical creature from
+                      Japanese folklore, known for its distinctive large, protruding
+                      eyes. These creatures are often depicted as guardians or
+                      protectors, keeping a watchful eye over their domain.
+                  </p>
+              </div>
+          </div>
+  
+          <!-- Shiva Nataraja -->
+          <div class="grid-item" id="shiva">
+              <div class="item1">
+                  <div class="image-slider">
+                      <img src="img/shiva-nataraja1.png" alt="Shiva Nataraja 1" />
+                      <img src="img/shiva-nataraja.png" alt="Shiva Nataraja 2" />
+                      <img src="img/shiva-nataraja2.png" alt="Shiva Nataraja 3" />
+                  </div>
+                  <div class="swipe-controls">
+                      <button class="swipe-btn prev-btn" onclick="swipeImage(this, -1)">‹</button>
+                      <button class="swipe-btn next-btn" onclick="swipeImage(this, 1)">›</button>
+                  </div>
+              </div>
+              <div>
+                  <h2 onclick="openModal('shiva')">Shiva Nataraja</h2>
+                  <p>
+                      Shiva Nataraja is an iconic representation of the Hindu deity
+                      Shiva in his aspect as the lord of dance. The sculpture depicts
+                      Shiva performing the Tandava, a cosmic dance that represents the
+                      cycle of creation, preservation, and destruction.
+                  </p>
+              </div>
+          </div>
+  
+          <!-- Winged Dragon -->
+          <div class="grid-item" id="dragon">
+              <div class="item1">
+                  <div class="image-slider">
+                      <img src="img/Winged-dragon-Camera 3.png" alt="Winged Dragon 1" />
+                      <img src="img/Winged-dragon-Camera 2.png" alt="Winged Dragon 2" />
+                      <img src="img/Winged-dragon-Camera.png" alt="Winged Dragon 3" />
+                  </div>
+                  <div class="swipe-controls">
+                      <button class="swipe-btn prev-btn" onclick="swipeImage(this, -1)">‹</button>
+                      <button class="swipe-btn next-btn" onclick="swipeImage(this, 1)">›</button>
+                  </div>
+              </div>
+              <div>
+                  <h2 onclick="openModal('dragon')">Winged Dragon</h2>
+                  <p>
+                      The winged dragon is a mythical creature found in various cultures
+                      around the world. These majestic beasts are often associated with
+                      power, wisdom, and the elements of air and fire. They are revered
+                      for their strength, grace, and the ability to soar through the
+                      skies.
+                  </p>
+              </div>
+          </div>
+  
+          <!-- Shoki -->
+          <div class="grid-item" id="shoki">
+              <div class="item1">
+                  <div class="image-slider">
+                      <img src="img/Shoki - oni-Camera.png" alt="Shōki 1" />
+                      <img src="img/Shoki - oni-Camera 2.png" alt="Shōki 2" />
+                      <img src="img/Shoki - oni-Camera 3.png" alt="Shōki 3" />
+                  </div>
+                  <div class="swipe-controls">
+                      <button class="swipe-btn prev-btn" onclick="swipeImage(this, -1)">‹</button>
+                      <button class="swipe-btn next-btn" onclick="swipeImage(this, 1)">›</button>
+                  </div>
+              </div>
+              <div>
+                  <h2 onclick="openModal('shoki')">Shoki</h2>
+                  <p>
+                      Shōki is a demon-quelling deity from Chinese and Japanese
+                      folklore. Depicted as a powerful warrior, Shōki is believed to
+                      have the ability to vanquish evil spirits and protect people from
+                      harm. This 3D model captures the fierce and determined expression
+                      of this legendary figure.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+    <!-- More Modal Structure -->
+    <div id="shakokiModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('shakoki')">&times;</span>
+        <h1>Shakōki or Goggle-eyed</h1>
+        <p>Detailed information about Shakōki or Goggle-eyed.</p>
+        <model-viewer
+          alt="ShakokiModel"
+          src="img/shoki.glb"
+          ar shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        ></model-viewer>
+        <p>
+          Title: Figurine of a Female
+          <br />
+          Dated:1000-800 BCE
+          <br />
+          Artist: Unknown Japanese
+          <br />
+          Role: Artist
+          <br />
+          Gallery: G205
+          <br />
+          Department:Asian Art
+          <br />
+          Dimension: 7 5/8 × 5 5/16 × 3 7/8 in. (19.37 × 13.49 × 9.84 cm)
+        </p>
+        <p>
+          Over the years, archaeologists have uncovered many different kinds of
+          clay figurines dogū dating to Japan’s prehistoric Jōmon period
+          (14,000–300 bce)­. The most diverse forms have been excavated in
+          northeastern Japan, where this figurine of a female was discovered.
+          Some are seated, others standing, some have heart-shaped heads, others
+          round and wearing headpieces, some have little or no surface
+          decoration, and others, like this example, known as a shakōki or
+          “goggle-eyed” type, have distinctive large eyes and are adorned with
+          color and complex carved decorations. No one knows for sure how these
+          figurines were used, but there are several theories. The prevailing
+          theory holds that they served as talismans related to health and
+          childbirth, and that after they were used they were purposefully
+          broken and disposed of, which may account for the fact that dogū are
+          found with missing limbs or other seemingly purposeful breaks.
+        </p>
+      </div>
+    </div>
+
+    <div id="shivaModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('shiva')">&times;</span>
+        <h1>Shiva Nataraja</h1>
+        <p>Detailed information about Shiva Nataraja.</p>
+        <model-viewer
+          alt="ShakokiModel"
+          src="img/shiva-nataraja.glb"
+          shadow-intensity="1"
+          ar camera-controls
+          touch-action="pan-y"
+        ></model-viewer>
+        <p>
+          Title: Shiva Nataraja (Lord of the Dance)
+          <br />
+          Date: dc. 1100
+          <br />
+          Role:Artist
+          <br />
+          Gallery:G211
+          <br />
+          Department:Asian Art
+          <br />
+          Dimension: 28 in. (71.12 cm)
+          <br />
+          Medium:Bronze
+          <br />
+          Country:India
+          <br />
+          Century: 11th or 12th century
+        </p>
+        <p>
+          The Hindu god Shiva appears in several incarnations. Here, Shiva
+          appears as Nataraja, or Lord of the Dance. He raises his left foot in
+          a graceful dance pose. In his upper right hand, Nataraja holds a drum,
+          the sound of which manifests creation. The flame that he holds in his
+          upper left hand symbolizes destruction. Together, they symbolize the
+          creation and destruction of the cosmic universe. The posture of the
+          icon’s lower left and right palms signifies protection. The foot that
+          rests on the demon’s back symbolizes the elimination of ignorance,
+          while the raised left foot signifies salvation. A now missing ring of
+          fire, symbolic of the simultaneous and continuous creation and
+          destruction of the universe, would have encircled the bronze icon.
+        </p>
+      </div>
+    </div>
+
+    <div id="dragonModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('dragon')">&times;</span>
+        <h1>Winged Dragon</h1>
+        <p>Detailed information about Winged Dragon.</p>
+        <model-viewer
+          alt="ShakokiModel"
+          src="img/winged-dragon.glb"
+          shadow-intensity="1"
+          ar camera-controls
+          touch-action="pan-y"
+        ></model-viewer>
+        <p>
+          Title:Winged dragon, one of a pair
+          <br />
+          Dated: 5th-4th century BCE
+          <br />
+          Role:Artist
+          <br />
+          Gallery:G103
+          <br />
+          Department:Asian Art
+          <br />
+          Dimension: 7 x 8 3/16 in. (17.78 x 20.8 cm)
+        </p>
+        <p>
+          The sculptural quality of these dashing beasts is conveyed by their
+          stances, the proud carriage of their heads, and the apparent agility
+          of their bodies. The forceful comma-shaped tails and their jaunty
+          tufts, as well as the double-rope patterns on the moustaches, are
+          typical elements of Warring States period art.
+        </p>
+      </div>
+    </div>
+
+    <div id="shokiModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('shoki')">&times;</span>
+        <h1>Shoki</h1>
+        <p>Detailed information about Shoki.</p>
+        <model-viewer
+          alt="ShakokiModel"
+          src="img/shakoki.glb"
+          ar shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        ></model-viewer>
+        <p>
+          Details Title: Shōki capturing a demon with a hat
+          <br />Dated: 19th century
+          <br />
+          Artist: Harumitsu
+          <br />Nationality: Japanese <br />Role: Artist <br />Gallery: G219
+          <br />
+          Department: Asian Art Dimension: 1 3/8 x 1 3/8 x 1in. (3.5 x 3.5 x
+          2.5cm)
+        </p>
+        <p>
+          The sculpture titled Shōki Capturing a Demon with a Hat is a
+          19th-century ivory netsuke created by the Japanese artist Harumitsu.
+          It depicts Shōki, a legendary figure in Chinese and Japanese
+          mythology, known for his role as a vanquisher of evil spirits and
+          demons. In the artwork, Shōki is portrayed in a dynamic pose,
+          capturing a demon with a hat, which is a common motif in traditional
+          Japanese art symbolizing protection from evil forces. Shōki was often
+          depicted as a guardian spirit, believed to have the power to command
+          demons and protect homes, especially in areas with valuable goods.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-main">
+        <h3>Your <span class="journey">Journey</span> Shouldn't End Here.</h3>
+        <a
+          href="https://new.artsmia.org/"
+          target="_blank"
+          class="explore-button"
+        >
+          Explore more on The Minneapolis Institute of Art
+        </a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-creator">
+        <p>Created by: Sky Ponpadung</p>
+        <p>Contact Email: S.ponpadung@gmail.com</p>
+        <p>
+          See more of my works
+          <a href="https://skyponpadung.myportfolio.com/" target="_blank"
+            >here</a
+          >
+        </p>
+
+        <div class="social-links">
+          Connect with me:
+          <a href="https://github.com/Skysp3ctre/" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/sky-ponpadung/" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
