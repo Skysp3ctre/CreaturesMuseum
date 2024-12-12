@@ -485,7 +485,31 @@ model-viewer {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+/* Style for the scroll-up button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right of the page */
+  background-color: #70d0b8; /* Green color for the button */
+  color: white;
+  border: none;
+  font-size: 30px; /* Size of the arrow */
+  padding: 15px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #9dc651; /* Change color on hover */
+}
+
+audio {
+  color: #0f1407;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
   .intro-container {
     padding: 1.5rem;
     margin: 1rem;
@@ -497,5 +521,55 @@ model-viewer {
 
   .intro-text {
     font-size: 1rem;
+  }
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.grid-item {
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+
+  audio {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 400px;
+    padding: 15px;
+  }
+
+  .navbar a {
+    padding: 8px 16px;
+  }
+
+  .grid-item {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  audio {
+    margin-left: 0;
   }
 }
